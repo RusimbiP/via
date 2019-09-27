@@ -146,11 +146,9 @@ main {
     color: white;
     font-size: 14px;
     background: #ffffff;
-    padding: 8px 15px;
-    margin: 15px;
     margin-top: -15px;
     border-radius: 6px;
-    box-shadow: 0 1px 1.5rem rgba(0, 0, 0, .1);
+    /* box-shadow: 0 1px 1.5rem rgba(0, 0, 0, .1); */
 }
 main header {
     margin-top: 20px;
@@ -222,7 +220,7 @@ main .listings {
 }
 
 main .listings figure {
-    margin: 5px 8px 10px;
+    margin: 16px;
     box-shadow: 0 4px 10px 0 lightgray;
     
 }
@@ -527,4 +525,12 @@ main .pagination #next {
 
 .categories{
   margin-top: 5%;
+  margin-left: 4%;
 }
+
+.categories ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+  }

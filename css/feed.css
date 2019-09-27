@@ -16,7 +16,7 @@ nav {
 }
 
 nav ul li a {
-    color: #151523;
+    color: #142fb4;
 }
 
 *{
@@ -261,7 +261,7 @@ main .listings figure figcaption p {
 }
 
 main .listings figure figcaption .price {
-    color: #151523;
+    color: #142fb4;
 }
 
 main .listings figure figcaption .location {
@@ -490,8 +490,8 @@ main .pagination #next {
  .button {
   margin-top: 3px;
 	border-radius: 3px;
-	border: 1px solid #151523;
-	background-color: #151523;
+	border: 1px solid #142fb4;
+	background-color: #142fb4;
 	color: white;
 	font-size: 13px;
 	font-weight: bold;

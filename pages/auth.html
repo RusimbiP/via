@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp and Login</title>
+	<link rel="stylesheet" href="../css/auth.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav id="mainNavbar">
+    <ul>
+        <li class="logo"><a href="../index.html"><i class="fas fa-arrow-left"></i> back to home.</a></li>
+    </ul>
+</nav>
+
+	<div class="container" id="container">
+	<div class="form-container sign-up-container">
+
+	<form action="">
+    <input type="text" name="firstName" placeholder="Firstname">
+    <input type="text" name="lastName" placeholder="lastname">
+		<input type="email" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="Password">
+    <input type="text" name="idNumber" placeholder="idNumber">
+		<select name="" id="">
+      <option value="startup">Startup</option>
+      <option value="investor">Investor</option>
+    </select>
+		<input class="image-upload" type="file" accept="image/*">
+		<!-- <input class="button" type="submit" value="SignUp"> -->
+		 <button>SignUp</button> 
+	</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign In</h1>
+		<input type="email" name="email" placeholder="Email">
+		<input type="password" name="password" placeholder="Password">
+		<!-- <input class="button" type="submit" value="Sign In"> -->
+		<button class="signin-button">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h2>Welcome Back!</h2>
+				<p>Sign in and start right away</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h2>Hi, there!</h2>
+				<p>Join the big ecosystem of funding and Investment </p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script>
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

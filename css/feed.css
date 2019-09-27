@@ -12,6 +12,7 @@ body {
 
 nav {
     background: white;
+    position: sticky;
 }
 
 nav ul li a {
@@ -33,6 +34,7 @@ a {
 }
 
 .container {
+    top: 15%;
     /* display: flex;
     flex-direction: column; */
     position: absolute;
@@ -489,7 +491,7 @@ main .pagination #next {
 
  .button {
   margin-top: 3px;
-	border-radius: 1px;
+	border-radius: 3px;
 	border: 1px solid #151523;
 	background-color: #151523;
 	color: white;
@@ -505,15 +507,15 @@ main .pagination #next {
   box-shadow: 0 1px 1.5rem rgba(0, 0, 0, .1);
 }
 
-button:active {
+.button:active {
 	transform: scale(0.95);
 }
 
-button:focus {
+.button:focus {
 	outline: none;
 }
 
-button.ghost {
+.button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
 }
